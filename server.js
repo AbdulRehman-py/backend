@@ -11,11 +11,10 @@ const PORT = process.env.PORT || 3000;
 // Updated CORS configuration to include all deployed frontend URLs
 const corsOptions = {
   origin: [
-    'https://imageuploadfrontend.vercel.app',
-    'https://imageupload-kr4sr7afc-roger-clarks-projects.vercel.app', // <-- add your deployed frontend URL here
-    'https://imageupload-psi.vercel.app', // <-- add any other deployed frontend URLs here
     'http://localhost:5173',
-    'https://imageupload-3ogq6c79l-roger-clarks-projects.vercel.app', // <-- add this line
+    'https://imageupload-3ogq6c79l-roger-clarks-projects.vercel.app',
+    'https://imageupload-git-master-roger-clarks-projects.vercel.app/'
+     
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Accept', 'Origin', 'X-Requested-With'],
