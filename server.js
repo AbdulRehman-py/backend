@@ -2,8 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { supabase } from "./supabaseClient.js";
-import { saveData } from "./src/components/db.js";
-
+import { saveData } from "./db.js";
 dotenv.config();
 
 const app = express();
