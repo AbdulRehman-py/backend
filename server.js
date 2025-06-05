@@ -13,7 +13,7 @@ const corsOptions = {
   origin: [
     'http://localhost:5173',
     'https://imageupload-3ogq6c79l-roger-clarks-projects.vercel.app',
-    'https://imageupload-git-master-roger-clarks-projects.vercel.app/'
+    'https://imageupload-git-master-roger-clarks-projects.vercel.app'
      
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
