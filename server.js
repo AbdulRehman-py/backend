@@ -14,7 +14,8 @@ const corsOptions = {
     'https://imageuploadfrontend.vercel.app',
     'https://imageupload-kr4sr7afc-roger-clarks-projects.vercel.app', // <-- add your deployed frontend URL here
     'https://imageupload-psi.vercel.app', // <-- add any other deployed frontend URLs here
-    'http://localhost:5173'
+    'http://localhost:5173',
+    'https://imageupload-3ogq6c79l-roger-clarks-projects.vercel.app', // <-- add this line
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Accept', 'Origin', 'X-Requested-With'],
