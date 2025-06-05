@@ -8,9 +8,14 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Simple CORS configuration
+// Updated CORS configuration to include all deployed frontend URLs
 const corsOptions = {
-  origin: ['https://imageuploadfrontend.vercel.app', 'http://localhost:5173'],
+  origin: [
+    'https://imageuploadfrontend.vercel.app',
+    'https://imageupload-kr4sr7afc-roger-clarks-projects.vercel.app', // <-- add your deployed frontend URL here
+    'https://imageupload-psi.vercel.app', // <-- add any other deployed frontend URLs here
+    'http://localhost:5173'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Accept', 'Origin', 'X-Requested-With'],
   credentials: false,
